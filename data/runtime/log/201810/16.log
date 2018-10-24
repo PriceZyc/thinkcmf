@@ -1,0 +1,382 @@
+---------------------------------------------------------------
+[ 2018-10-16T09:06:55+08:00 ] 127.0.0.1 GET /user/ce/index
+[ info ] localhost/user/ce/index [运行时间：1.292000s][吞吐率：0.77req/s] [内存消耗：2,376.05kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.018000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ce',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_username=admin; F3rCT3_admin_password=xwgh4685052; admin_username=admin; __atuvc=0%7C37%2C0%7C38%2C1%7C39%2C0%7C40%2C6%7C41',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.014000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\CeController->index[ F:\phpstudy\WWW\thinkcmf\app\user\controller\CeController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011000s ] mysql:host=localhost;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.041000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-10-16T09:06:55+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] localhost/favicon.ico [运行时间：0.041000s][吞吐率：24.39req/s] [内存消耗：1,503.66kb] [文件加载：51]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_username=admin; F3rCT3_admin_password=xwgh4685052; admin_username=admin; __atuvc=0%7C37%2C0%7C38%2C1%7C39%2C0%7C40%2C6%7C41',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/ce/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-16T09:59:06+08:00 ] 127.0.0.1 GET /user/ce/index
+[ info ] localhost/user/ce/index [运行时间：1.208000s][吞吐率：0.83req/s] [内存消耗：2,374.36kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.028000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ce',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_username=admin; F3rCT3_admin_password=xwgh4685052; admin_username=admin; __atuvc=0%7C37%2C0%7C38%2C1%7C39%2C0%7C40%2C6%7C41',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.005000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\user\controller\CeController->index[ F:\phpstudy\WWW\thinkcmf\app\user\controller\CeController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013000s ] mysql:host=localhost;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-16T11:08:05+08:00 ] 127.0.0.1 GET /user/ce/index
+[ info ] localhost/user/ce/index [运行时间：1.120000s][吞吐率：0.89req/s] [内存消耗：2,374.61kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ce',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_username=admin; F3rCT3_admin_password=xwgh4685052; admin_username=admin; __atuvc=0%7C37%2C0%7C38%2C1%7C39%2C0%7C40%2C6%7C41',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\user\controller\CeController->index[ F:\phpstudy\WWW\thinkcmf\app\user\controller\CeController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011000s ] mysql:host=localhost;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.059000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-16T11:10:54+08:00 ] 127.0.0.1 GET /user/ce/index
+[ info ] localhost/user/ce/index [运行时间：1.132000s][吞吐率：0.88req/s] [内存消耗：2,374.61kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ce',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_username=admin; F3rCT3_admin_password=xwgh4685052; admin_username=admin; __atuvc=0%7C37%2C0%7C38%2C1%7C39%2C0%7C40%2C6%7C41',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\CeController->index[ F:\phpstudy\WWW\thinkcmf\app\user\controller\CeController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014000s ] mysql:host=localhost;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.054000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-16T11:16:40+08:00 ] 127.0.0.1 GET /user/ce/index
+[ info ] localhost/user/ce/index [运行时间：1.131000s][吞吐率：0.88req/s] [内存消耗：2,374.36kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'ce',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_username=admin; F3rCT3_admin_password=xwgh4685052; admin_username=admin; __atuvc=0%7C37%2C0%7C38%2C1%7C39%2C0%7C40%2C6%7C41',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\user\controller\CeController->index[ F:\phpstudy\WWW\thinkcmf\app\user\controller\CeController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:host=localhost;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.049000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-10-16T15:52:52+08:00 ] 127.0.0.1 GET /user/test/test
+[ info ] localhost/user/test/test [运行时间：36.732000s][吞吐率：0.03req/s] [内存消耗：2,551.73kb] [文件加载：65]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'test',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_username=admin; F3rCT3_admin_password=xwgh4685052; admin_username=admin; __atuvc=0%7C37%2C0%7C38%2C1%7C39%2C0%7C40%2C6%7C41',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\TestController->test[ F:\phpstudy\WWW\thinkcmf\app\user\controller\TestController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016000s ] mysql:host=localhost;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_keyword` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT `name`,`cid` FROM `cmf_keyword` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_news_log` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 5 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 5 LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 4 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 26  AND `class` = 4 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 27  AND `class` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_news` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '20616179669270b7e6a02646a3b58275'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.093000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'd7935a4eecf886f893c9491cb8de99fb'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'a500cbc2eeac0a0b7bcf939ce986dcce'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'cd4061e535db3b9bd21d0052230f8a6e'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '2b2ee73ae855863bf081d2166cc17eee'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '688b0a01b32281b27048e72770e49210'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '1df46621dd6c2a8ebad6b4e5d7281dab'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'f17c4bab9cf24de621b9c28f7a93c562'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'ec894bd306e2fb9c77c2e3625be9cca3'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '4466d4a7d21a35753ea05e1c7bf3fc5d'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news` (`url` , `title` , `from_id` , `old_id` , `cover_url` , `content` , `create_at` , `cid`) VALUES ( 'http://www.sznews.com/news/content/2018-10/16/content_21146922.htm','超危险!小伙边开三轮车边看手机,怼货车后撞飞铁门',2,'20616179669270b7e6a02646a3b58275','','事发白泥坑丹农路海吉星绿色家园小区路段。据目击者介绍,当天中午12点多,一名骑三轮车送货的小伙子疑似看手机分神,未注意前方停放的大货车,反应过来时,已经来不及减速刹车。情急之下,男子伸手去挡货车尾部,在惯性和手部推力作用下,三轮车右拐撞上旁边小区铁门,将一扇大铁门...',1539676340,4 ) , ( 'https://www.toutiao.com/a6612826674322997763/','iOS 12自带鉴别真假原装功能,手机店老板都不会告诉你!',2,'d7935a4eecf886f893c9491cb8de99fb','[\"http:\\/\\/p0.qhimg.com\\/t01a3c76a1f7109dd71.jpg?size=636x427\",\"http:\\/\\/p0.qhimg.com\\/t01061e5d413cded81e.jpg?size=471x554\",\"http:\\/\\/p0.qhimg.com\\/t0192dab5bf53f4d225.gif?size=202x360\",\"http:\\/\\/p0.qhimg.com\\/t015915a4fb41c9b5ad.jpg?size=599x465\",\"http:\\/\\/p0.qhimg.com\\/t01495566b2f92e26d2.jpg?size=490x800\"]','在iPhone 8/X及以上的机型,苹果在屏幕中都加入了原彩显示的功能,但是只要你的iPhone更换过屏幕,不管是原装还是高仿的,在iOS 12中都是没有&quot;原彩显示&quot;这一功能的,所以在iOS 12上要看iPhone屏幕有没有更换过,只要看看有没有这个功能就可以了(在设置--显示与亮度--原彩...',1539676340,4 ) , ( 'http://sh.qihoo.com/pc/9b9e7a2bf5feb6b67?cota=1&sign=360_e39369d1','手机30年变迁,来看看这里有你用过的第一部手机吗',2,'a500cbc2eeac0a0b7bcf939ce986dcce','[\"http:\\/\\/p0.qhimg.com\\/t016f1ecb33d2b77ad1.jpg?size=497x329\",\"http:\\/\\/p0.qhimg.com\\/t0198afb6b3d7908cac.jpg?size=400x245\",\"http:\\/\\/p0.qhimg.com\\/t01e48513ba36436442.jpg?size=500x424\",\"http:\\/\\/p0.qhimg.com\\/t01a7d34262a7155d32.jpg?size=408x276\",\"http:\\/\\/p0.qhimg.com\\/t01a2ac4531ed22bc2f.jpg?size=476x293\",\"http:\\/\\/p0.qhimg.com\\/t0192a848e3a2603d2d.jpg?size=450x306\",\"http:\\/\\/p0.qhimg.com\\/t0108d1e9f81133d095.jpg?size=184x266\",\"http:\\/\\/p0.qhimg.com\\/t01fe94f744140c2d57.jpg?size=640x387\",\"http:\\/\\/p0.qhimg.com\\/t01b83d109cad4354cc.jpg?size=640x543\",\"http:\\/\\/p0.qhimg.com\\/t012420a5241309be44.jpg?size=640x480\",\"http:\\/\\/p0.qhimg.com\\/t014e63d65bfd6d6447.jpg?size=548x484\",\"http:\\/\\/p0.qhimg.com\\/t01de9744f0425453e2.jpg?size=370x529\",\"http:\\/\\/p0.qhimg.com\\/t01ca278697a791e264.jpg?size=447x306\",\"http:\\/\\/p0.qhimg.com\\/t0112916dc9f0008b58.jpg?size=640x1077\",\"http:\\/\\/p0.qhimg.com\\/t0174de97b024efaa8b.jpg?size=640x427\",\"http:\\/\\/p0.qhimg.com\\/t014907773fdebbf131.jpg?size=400x273\",\"http:\\/\\/p0.qhimg.com\\/t0180434136639a3ddd.jpg?size=400x259\",\"http:\\/\\/p0.qhimg.com\\/t017b5ca1545397b0fa.jpg?size=583x3\"]','n8:它似乎是诺基亚最后的疯狂。其实这已是iphone4的时代,苹果经历了前三代后,市场反响巨好,此时三星也有了note系列,然而诺基亚高傲地坚持着自己的系统。主流软件仍然支持这一平台,比如微信。 黑莓9900:全键盘一直是它的特色,这与老外办公重视电子邮件直接相关。据说辉煌时期...',1539676340,4 ) , ( 'http://sh.qihoo.com/pc/9fa00733bc72c9de9?cota=1&sign=360_e39369d1','手机用电快7个省电小技巧,你知道几个',2,'cd4061e535db3b9bd21d0052230f8a6e','[\"http:\\/\\/p0.qhimg.com\\/t0112fe2b4458079344.jpg?size=640x360\",\"http:\\/\\/p0.qhimg.com\\/t01f9cc3a674bef7a4b.jpg?size=640x1280\",\"http:\\/\\/p0.qhimg.com\\/t018b12a339c87560ff.jpg?size=640x1280\",\"http:\\/\\/p0.qhimg.com\\/t01f7aa5daae0723550.jpg?size=640x1280\",\"http:\\/\\/p0.qhimg.com\\/t011483c47422775eaa.jpg?size=640x1280\",\"http:\\/\\/p0.qhimg.com\\/t01c19b58e9c6dfc5db.jpg?size=640x1280\",\"http:\\/\\/p0.qhimg.com\\/t0140c8f1beaf37fe03.jpg?size=640x1280\",\"http:\\/\\/p0.qhimg.com\\/t019ca3e738ce4d6162.jpg?size=640x1280\"]','对于现在的大多数人来说,智能手机已经成为从单纯的通讯工具演变成为了生活中不可缺少的一部分。生活中的吃喝玩乐、穿衣住行甚至是工作都有可以通过一部手机完成。但是,高频率的使用手机会让手机的电池压力增大,为了保证用户的需求,很多厂商不得不通过加大电池容量达到长...',1539676340,4 ) , ( 'https://www.toutiao.com/a6612472867374236168/','小米、华为还是魅族,至今为止2000元的手机应该如何选择?',2,'2b2ee73ae855863bf081d2166cc17eee','[\"http:\\/\\/p4.qhimg.com\\/t019b79ffcb6e986153.jpg?size=640x476\",\"http:\\/\\/p7.qhimg.com\\/t01ab54ddba18f553cf.jpg?size=640x642\",\"http:\\/\\/p8.qhimg.com\\/t012f7354dd6159c5b7.jpg?size=640x480\",\"http:\\/\\/p9.qhimg.com\\/t018cdbc37c7fe6b5c1.jpg?size=640x427\",\"http:\\/\\/p1.qhimg.com\\/t01303a2e9af37df598.jpg?size=640x424\"]','华为荣耀系列一直是华为的主打系列,而荣耀10也是今年荣耀的旗舰机型,刚发布的时候荣耀10的手机价格是2599元,截止到现在荣耀10的价格已经降到2299元,也是非常值得购买的。配置方面荣耀10搭载麒麟970处理器,也是当时华为最先进的处理器了,辅以6+64GB/128GB和8+128GB的...',1539676340,4 ) , ( 'http://slide.ent.sina.com.cn/star/slide_4_704_295652.html/d/1','组图:董璇现身上海时装周 美艳亮相手机自拍停不下来',2,'688b0a01b32281b27048e72770e49210','[\"http:\\/\\/p0.so.qhimg.com\\/t01691e1785b3a225c5.jpg?747x1024\",\"http:\\/\\/p0.so.qhimg.com\\/t0113edfa7120e1f245.jpg?638x1024\",\"http:\\/\\/p0.so.qhimg.com\\/t01fb17e4acbbad2984.jpg?950x980\"]','',1539676340,4 ) , ( 'http://dm.ifeng.com/dm/125/44.shtml','手机少年_44',2,'1df46621dd6c2a8ebad6b4e5d7281dab','[\"http:\\/\\/p0.so.qhimg.com\\/t01661999dd2d565f3e.jpg?600x848\",\"http:\\/\\/p0.so.qhimg.com\\/t01d900833ed0fddda4.jpg?600x848\",\"http:\\/\\/p0.so.qhimg.com\\/t01fc51e5e86dc8498c.jpg?600x848\"]','',1539676340,4 ) , ( 'http://www.iqiyi.com/w_19rz43vmwp.html#vfrm=2-4-0-1','范冰冰 回应《手机2》话题',2,'f17c4bab9cf24de621b9c28f7a93c562','','',1539676340,4 ) , ( 'http://v.youku.com/v_show/id_XMzU1Mzc2NjIxMg==.html','笑哭! 少年走路玩手机被绊倒 一掌拍上翔',2,'ec894bd306e2fb9c77c2e3625be9cca3','','',1539676340,4 ) , ( 'http://www.iqiyi.com/v_19rrcetz18.html#vfrm=2-4-0-1','金刚芭比!95后女生一身肌肉:手机钱包故意外露,就为找贼练拳',2,'4466d4a7d21a35753ea05e1c7bf3fc5d','','',1539676340,4 ) [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news_log` (`class` , `page`) VALUES (4 , 27) [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'd7935a4eecf886f893c9491cb8de99fb'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'a500cbc2eeac0a0b7bcf939ce986dcce'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'cd4061e535db3b9bd21d0052230f8a6e'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'ad5c08e9a12a059c7c81e2a0b6b2ccb1'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '688b0a01b32281b27048e72770e49210'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '1df46621dd6c2a8ebad6b4e5d7281dab'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '52cb2174121ffca29542ee3f00dbeff5'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'f17c4bab9cf24de621b9c28f7a93c562'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'ec894bd306e2fb9c77c2e3625be9cca3'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '4466d4a7d21a35753ea05e1c7bf3fc5d'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news` (`url` , `title` , `from_id` , `old_id` , `cover_url` , `content` , `create_at` , `cid`) VALUES ( 'http://sh.qihoo.com/pc/93697532944d357d3?cota=1&sign=360_e39369d1','手机&quot;自动订房&quot;现场检测揭秘真相',2,'ad5c08e9a12a059c7c81e2a0b6b2ccb1','[\"http:\\/\\/p0.qhimg.com\\/t010a88f06524203796.jpg?size=640x853\",\"http:\\/\\/p0.qhimg.com\\/t018bd561f30a6d79bb.jpg?size=640x853\",\"http:\\/\\/p0.qhimg.com\\/t01461d42cbe7fa36a1.jpg?size=640x853\",\"http:\\/\\/p0.qhimg.com\\/t01b07cabd3af485b77.jpg?size=640x788\",\"http:\\/\\/p0.qhimg.com\\/t01987c8f2ab8354627.jpg?size=640x853\",\"http:\\/\\/p0.qhimg.com\\/t01945e215c3f0e4d34.jpg?size=640x321\",\"http:\\/\\/p0.qhimg.com\\/t018b77855c1fb88216.jpg?size=640x321\"]','&quot;近日,我总队在看到媒体文章《正充电的手机,自动订了总统套房》后,及时联系了杨女士,会同相关安全技术人员对其当时使用的手机、充电头和数据线进行了检测,现已排除涉事手机被植入后门或通过数据线被控制的可能性。检测还发现,涉事充电头存在输出电压偏高、不稳定、电...',1539676343,4 ) , ( 'http://dm.ifeng.com/dm/125/31.shtml','手机少年_31',2,'52cb2174121ffca29542ee3f00dbeff5','[\"http:\\/\\/p0.so.qhimg.com\\/t0120d3153168eec7a3.jpg?600x848\",\"http:\\/\\/p0.so.qhimg.com\\/t01bd06429d2f07bec4.jpg?600x848\",\"http:\\/\\/p0.so.qhimg.com\\/t01675529c3016be1d9.jpg?600x848\"]','',1539676343,4 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news_log` (`class` , `page`) VALUES (4 , 28) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 8 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 8 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 7 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 19  AND `class` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 20  AND `class` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '12982fca2ca5320f83eb4922bf5765e5'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '68364b1f26d3f9684b10f1105961d894'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '470aa80b892366a60de2bbd814a94dac'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '28f4a1400fb669fee840119e22e6d69c'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '760385d4248c67b9c9e5c285e27db901'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'ebda3eb4a27afd7e5da0f5ee8671c3ae'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '3616c12a1518264627a32f1f8a66ad47'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '857bb94c0a0276be9ac753e7c3fd7c08'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '20e141d1dd3f1723e1469f0169363117'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '6f07c7a21eadb3f88584bbba54adce95'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news` (`url` , `title` , `from_id` , `old_id` , `cover_url` , `content` , `create_at` , `cid`) VALUES ( 'http://finance.chinanews.com/jk/2018/10-16/8651117.shtml','&quot;组团式&quot;帮扶托起山乡&quot;健康梦&quot;',2,'12982fca2ca5320f83eb4922bf5765e5','','   &quot; 组团式&quot;帮扶托起山乡&quot;健康梦&quot;--援黔医疗对口帮扶见闻  新华社贵阳10月16日电 题:&quot;组团式&quot;帮扶托起山乡&quot;健康梦&quot;--援黔医疗对口帮扶见闻  新华社记者李惊亚、肖艳  近年来,援黔医疗卫生对口帮扶工作在贵州大地上全面铺开,在东部优质医...',1539676345,7 ) , ( 'http://finance.eastmoney.com/a/20181016962886015.html','去年全国教育经费总投入超4万亿 增长9.45%',2,'68364b1f26d3f9684b10f1105961d894','','     据财政部统计,2017年,全国教育经费总投入为42562.01亿元,比上年增长9.45%。国家财政性教育经费占GDP比例为4.14%。   据财政部官网10月16日发布,2017年,全国教育经费总投入为42562.01亿元,比上年增长9.45%。  其中,国家财政性教育经费(主要包括一般公共预算安排的教育...',1539676345,7 ) , ( 'http://finance.eastmoney.com/news/1355,20181016962885734.html','麻省理工学院斥资10亿美元建新AI学院',2,'470aa80b892366a60de2bbd814a94dac','','     美国麻省理工学院周一宣布,将投资10亿美元建设一所新的人工智能学院。  官方表示,目前三分之二的资金已经筹集完毕。其中,约3.5亿美元的投资来自黑石集团CEO Stephen A。 Schwarzman。该人工智能学院也将命名为麻省理工学院史蒂芬·施瓦茨曼计算学院。该学院具有50个...',1539676345,7 ) , ( 'https://www.toutiao.com/i6612800907673338375/','关于理财那些事14:有钱的你是选择还贷,还是选择理财?',2,'28f4a1400fb669fee840119e22e6d69c','[\"http:\\/\\/p0.qhimg.com\\/t01273fe47d52e97e87.jpg?size=640x426\",\"http:\\/\\/p0.qhimg.com\\/t01a0928c2ddb581d56.jpg?size=640x541\",\"http:\\/\\/p0.qhimg.com\\/t011c4cb066cd7c632d.jpg?size=640x426\",\"http:\\/\\/p0.qhimg.com\\/t01ffafa3e5a6df3089.gif?size=250x252\"]','前两年我婆婆攒够了还贷款的钱,当她准备去还清贷款时,我帮她分析把贷款变成好债,用这部分钱去理财赚钱,而每月还贷并没有影响家里生活质量,就轻轻松松的多还几年。婆婆认真的计算了一下,感觉这办法好,现在她把这办法向她的姐妹们推广着,有好几个老姐妹照着做了。 我把自己的...',1539676345,7 ) , ( 'https://www.toutiao.com/a6612798897578312200/','财经观察:油价上涨让埃及经济雪上加霜',2,'760385d4248c67b9c9e5c285e27db901','','新华社开罗10月16日电 财经观察:油价上涨让埃及经济雪上加霜 新华社记者李碧念 于涛 近期,国际油价不断攀升,目前每桶已超过80美元。对于正在实施严格经济改革计划、财政本就捉襟见肘的埃及来说,不断上涨的油价无疑是雪上加霜,不仅增加财政负担,也对民生和经济多方面造成负面...',1539676345,7 ) , ( 'https://www.toutiao.com/i6612778982771261956/','财经观察家|包冉:FF争夺战,恒大更占优势',2,'ebda3eb4a27afd7e5da0f5ee8671c3ae','[\"http:\\/\\/p0.qhimg.com\\/t0148f02f6a76cb078f.jpg?size=640x356\",\"http:\\/\\/p0.qhimg.com\\/t013464a2d9ea20c6fe.jpg?size=640x960\",\"http:\\/\\/p0.qhimg.com\\/t011cbeffd6d67e7096.jpg?size=640x360\",\"http:\\/\\/p0.qhimg.com\\/t01aba44d48e4f08eee.jpg?size=640x360\",\"http:\\/\\/p0.qhimg.com\\/t01d8c11a9782ee378f.jpg?size=640x358\",\"http:\\/\\/p0.qhimg.com\\/t012d07b8377cf80d4e.jpg?size=640x354\",\"http:\\/\\/p0.qhimg.com\\/t01185da38fb7ac1fbf.jpg?size=640x360\",\"http:\\/\\/p0.qhimg.com\\/t01c035e2b1d0f17708.jpg?size=640x360\",\"http:\\/\\/p0.qhimg.com\\/t0163f721fe049e5341.jpg?size=640x360\",\"http:\\/\\/p0.qhimg.com\\/t015bd592dcb437c301.jpg?size=640x357\"]','大家好,欢迎来到《财经观察家》,我是包冉 、包包,今天我们聊聊什么话题?我们聊一聊:贾跃亭分手许家印,FF到底花落谁家? 【 新闻背景】 恒大健康10月7日公告称,恒大在2018年5月已提前支付8亿美元,7月,贾跃亭方面提出恒大的8亿美元已基本用完,要求恒大再提前支付7亿美元。恒大...',1539676345,7 ) , ( 'http://v.youku.com/v_show/id_XMzg2NDAxNzc2NA==.html','财经日历: 2018年10月16日重点财经数据与事件',2,'3616c12a1518264627a32f1f8a66ad47','','',1539676345,7 ) , ( 'http://v.ifeng.com/201810/video_25479539.shtml','理财新规正式落地,个中变化影响几何',2,'857bb94c0a0276be9ac753e7c3fd7c08','','',1539676345,7 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news_log` (`class` , `page`) VALUES (7 , 20) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 21  AND `class` = 7 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'fe5beed8a495a0493f9e45fcfb9a914f'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '1e2bda756be695362b635194f361f91c'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '28f4a1400fb669fee840119e22e6d69c'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '760385d4248c67b9c9e5c285e27db901'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = 'ebda3eb4a27afd7e5da0f5ee8671c3ae'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '3616c12a1518264627a32f1f8a66ad47'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '99c90bafe71427b110ff35e83eb5efb0'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '857bb94c0a0276be9ac753e7c3fd7c08'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '20e141d1dd3f1723e1469f0169363117'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news` WHERE  `old_id` = '6f07c7a21eadb3f88584bbba54adce95'  AND `from_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news` (`url` , `title` , `from_id` , `old_id` , `cover_url` , `content` , `create_at` , `cid`) VALUES ( 'http://finance.eastmoney.com/news/1355,20181016962885869.html','易点租完成D轮6000万美元融资 加速企业IT服务布局',2,'fe5beed8a495a0493f9e45fcfb9a914f','','     截至目前,易点租服务企业超2万家,租赁设备超30万台,市场占有率近80%。   10月16日,企业IT租赁服务和管理平台易点租宣布完成6000万美元D轮融资,本轮融资由老股东源码资本和某主权基金联合领投,资金将主要用于加速企业IT服务布局,扩张更多城市,加强服务能力。  易点租成立...',1539676347,7 ) , ( 'http://finance.eastmoney.com/a/20181016962885547.html','中国(海南)自由贸易试验区总体方案',2,'1e2bda756be695362b635194f361f91c','','     赋予海南经济特区改革开放新的使命,是习近平总书记亲自谋划、亲自部署、亲自推动的重大国家战略。建设中国(海南)自由贸易试验区(以下简称自贸试验区)是党中央、国务院着眼于国际国内发展大局,深入研究、统筹考虑、科学谋划作出的重大决策,是彰显我国扩大对外开放、积极...',1539676347,7 ) , ( 'http://v.youku.com/v_show/id_XMzg2MzAwMTA1Ng==.html','财经专家: 未来3年, 只有20%的二手房能变现! 卖不掉的怎么办?',2,'99c90bafe71427b110ff35e83eb5efb0','','',1539676347,7 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `cmf_news_log` (`class` , `page`) VALUES (7 , 21) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 2 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 36  AND `class` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 3 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 26  AND `class` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 5 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 5 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 2 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 36  AND `class` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 5 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 5 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 5 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 5 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 7 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 21  AND `class` = 7 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 4 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 4 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 4 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 32  AND `class` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 1 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 32  AND `class` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 4 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 28  AND `class` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 2 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 36  AND `class` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `page` FROM `cmf_news_log` WHERE  `class` = 3 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_news_log` WHERE  `page` = 26  AND `class` = 3 LIMIT 1 [ RunTime:0.001000s ]

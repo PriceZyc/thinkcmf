@@ -1,0 +1,2576 @@
+---------------------------------------------------------------
+[ 2018-07-13T17:26:29+08:00 ] 127.0.0.1 GET /admin
+[ info ] localhost/admin [运行时间：0.571000s][吞吐率：1.75req/s] [内存消耗：2,460.45kb] [文件加载：72]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.039000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.033000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.043000s ]
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.035000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.043000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:29+08:00 ] 127.0.0.1 GET /admin
+[ info ] localhost/admin [运行时间：0.093000s][吞吐率：10.75req/s] [内存消耗：2,460.50kb] [文件加载：72]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.021000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:30+08:00 ] 127.0.0.1 GET /admin/public/login.html
+[ info ] localhost/admin/public/login.html [运行时间：0.124000s][吞吐率：8.06req/s] [内存消耗：2,652.25kb] [文件加载：74]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\thinkcmf\public/plugins/shang_admin_login/view/widget.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\shang_admin_login\ShangAdminLoginPlugin @admin_login [ RunTime:0.032000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'ShangAdminLogin' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:30+08:00 ] 127.0.0.1 GET /admin/public/login.html
+[ info ] localhost/admin/public/login.html [运行时间：0.079000s][吞吐率：12.66req/s] [内存消耗：2,652.30kb] [文件加载：74]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\thinkcmf\public/plugins/shang_admin_login/view/widget.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\shang_admin_login\ShangAdminLoginPlugin @admin_login [ RunTime:0.025000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'ShangAdminLogin' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:30+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18
+[ info ] localhost/captcha/new.html?height=32&width=150&font_size=18 [运行时间：0.185000s][吞吐率：5.41req/s] [内存消耗：1,537.93kb] [文件加载：51]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/public/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ D:\phpStudy\WWW\thinkcmf\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:26:30+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18
+[ info ] localhost/captcha/new.html?height=32&width=150&font_size=18 [运行时间：0.043000s][吞吐率：23.26req/s] [内存消耗：1,537.93kb] [文件加载：51]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/public/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.005000s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ D:\phpStudy\WWW\thinkcmf\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T17:26:35+08:00 ] 127.0.0.1 POST /admin/public/dologin.html
+[ info ] localhost/admin/public/dologin.html [运行时间：0.229000s][吞吐率：4.37req/s] [内存消耗：2,523.41kb] [文件加载：70]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/public/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '66',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'htjw',
+  '_captcha_id' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.031000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `cmf_user`  SET `user_type`=1,`sex`=0,`birthday`=0,`last_login_time`=1531473995,`score`=2,`coin`=2,`balance`=0,`create_time`=1530243644,`user_status`=1,`user_login`='admin',`user_pass`='###328bbb70cc668097fca5de6fb33e1a05',`user_nickname`='admin',`user_email`='14781876236@163.com',`user_url`='',`avatar`='avatar/20180702/ef7bed941bfc5e67e4087f7e34d89241.jpg',`signature`='',`last_login_ip`='127.0.0.1',`user_activation_key`='',`mobile`='17620119887',`more`=NULL  WHERE  `id` = 1 [ RunTime:0.036000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:37+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.400000s][吞吐率：2.50req/s] [内存消耗：3,194.02kb] [文件加载：83]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/public/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.006000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.006000s ]
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.046000s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.036000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.036000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.076000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:38+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] localhost/admin/main/index.html [运行时间：0.235000s][吞吐率：4.26req/s] [内存消耗：2,748.46kb] [文件加载：81]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.008000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.011000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.026000s ]
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\thinkcmf\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.019000s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:40+08:00 ] 127.0.0.1 GET /Portal/admin_about/index.html
+[ info ] localhost/Portal/admin_about/index.html [运行时间：0.218000s][吞吐率：4.59req/s] [内存消耗：3,094.06kb] [文件加载：87]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Portal',
+    1 => 'admin_about',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.020000s ]
+[ info ] [ RUN ] app\portal\controller\AdminAboutController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminAboutController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_about\index.html [ array (
+  0 => 'admin',
+  1 => 'keyword',
+  2 => 'data',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_about` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_about` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_about` ORDER BY `id` DESC LIMIT 0,3 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:45+08:00 ] 127.0.0.1 GET /portal/admin_category/index.html
+[ info ] localhost/portal/admin_category/index.html [运行时间：0.282000s][吞吐率：3.55req/s] [内存消耗：3,100.09kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.011000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.009000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.022000s ]
+[ info ] [ RUN ] app\portal\controller\AdminCategoryController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminCategoryController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_category\index.html [ array (
+  0 => 'admin',
+  1 => 'category_tree',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.040000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_category` WHERE  `delete_time` = 0 ORDER BY `list_order` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:48+08:00 ] 127.0.0.1 GET /portal/admin_category/index.html
+[ info ] localhost/portal/admin_category/index.html [运行时间：0.146000s][吞吐率：6.85req/s] [内存消耗：3,100.42kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.021000s ]
+[ info ] [ RUN ] app\portal\controller\AdminCategoryController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminCategoryController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_category\index.html [ array (
+  0 => 'admin',
+  1 => 'category_tree',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_category` WHERE  `delete_time` = 0 ORDER BY `list_order` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:48+08:00 ] 127.0.0.1 GET /portal/admin_article/index.html
+[ info ] localhost/portal/admin_article/index.html [运行时间：0.276000s][吞吐率：3.62req/s] [内存消耗：3,461.59kb] [文件加载：96]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.015000s ]
+[ info ] [ RUN ] app\portal\controller\AdminArticleController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminArticleController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_article\index.html [ array (
+  0 => 'admin',
+  1 => 'start_time',
+  2 => 'end_time',
+  3 => 'keyword',
+  4 => 'articles',
+  5 => 'category_tree',
+  6 => 'category',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.040000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`u`.`user_login`,`u`.`user_nickname`,`u`.`user_email` FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 1 ORDER BY `update_time` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_category` WHERE  `delete_time` = 0 ORDER BY `list_order` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category_post` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `cmf_portal_category`.*,pivot.id AS pivot__id,pivot.post_id AS pivot__post_id,pivot.category_id AS pivot__category_id,pivot.list_order AS pivot__list_order,pivot.status AS pivot__status FROM `cmf_portal_category` INNER JOIN `cmf_portal_category_post` `pivot` ON `pivot`.`category_id`=`cmf_portal_category`.`id` WHERE  `pivot`.`post_id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:52+08:00 ] 127.0.0.1 GET /portal/admin_tag/index.html
+[ info ] localhost/portal/admin_tag/index.html [运行时间：0.219000s][吞吐率：4.57req/s] [内存消耗：3,036.84kb] [文件加载：85]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_tag',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.006000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.020000s ]
+[ info ] [ RUN ] app\portal\controller\AdminTagController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminTagController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_tag\index.html [ array (
+  0 => 'admin',
+  1 => 'arrStatus',
+  2 => 'tags',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_tag` [ RunTime:0.037000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_portal_tag` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_tag` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:55+08:00 ] 127.0.0.1 GET /user/admin_index/index.html
+[ info ] localhost/user/admin_index/index.html [运行时间：0.163000s][吞吐率：6.13req/s] [内存消耗：2,774.81kb] [文件加载：82]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin_index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.022000s ]
+[ info ] [ RUN ] app\user\controller\AdminIndexController->index[ D:\phpStudy\WWW\thinkcmf\app\user\controller\AdminIndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/user\admin_index\index.html [ array (
+  0 => 'admin',
+  1 => 'list',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:56+08:00 ] 127.0.0.1 GET /user/public/avatar/id/2.html
+[ info ] localhost/user/public/avatar/id/2.html [运行时间：0.136000s][吞吐率：7.35req/s] [内存消耗：2,597.13kb] [文件加载：71]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.024000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:56+08:00 ] 127.0.0.1 GET /user/public/avatar/id/3.html
+[ info ] localhost/user/public/avatar/id/3.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：2,577.38kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:26:56+08:00 ] 127.0.0.1 GET /user/public/avatar/id/1.html
+[ info ] localhost/user/public/avatar/id/1.html [运行时间：0.089000s][吞吐率：11.24req/s] [内存消耗：2,597.13kb] [文件加载：71]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:00+08:00 ] 127.0.0.1 GET /admin/plugin/index.html
+[ info ] localhost/admin/plugin/index.html [运行时间：0.306000s][吞吐率：3.27req/s] [内存消耗：3,179.42kb] [文件加载：95]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.011000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'plugin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.007000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.021000s ]
+[ info ] [ RUN ] app\admin\controller\PluginController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\PluginController.php ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/plugins/demo/lang/zh-cn.php
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\plugin\index.html [ array (
+  0 => 'admin',
+  1 => 'plugins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_plugin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Demo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Qiniu' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Statistics' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchAdminThemeDemo' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'YimE404' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:01+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.152000s][吞吐率：6.58req/s] [内存消耗：3,194.38kb] [文件加载：83]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.020000s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:01+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] localhost/admin/main/index.html [运行时间：0.168000s][吞吐率：5.95req/s] [内存消耗：2,748.54kb] [文件加载：81]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.023000s ]
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\thinkcmf\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.006000s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.039000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:01+08:00 ] 127.0.0.1 GET /admin/plugin/index.html
+[ info ] localhost/admin/plugin/index.html [运行时间：0.147000s][吞吐率：6.80req/s] [内存消耗：3,179.70kb] [文件加载：95]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'plugin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.027000s ]
+[ info ] [ RUN ] app\admin\controller\PluginController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\PluginController.php ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/plugins/demo/lang/zh-cn.php
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\plugin\index.html [ array (
+  0 => 'admin',
+  1 => 'plugins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_plugin` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'CustomAdminLogin' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Demo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Qiniu' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Statistics' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchAdminThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SwitchThemeDemo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'Wxapp' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'YimE404' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:05+08:00 ] 127.0.0.1 GET /user/admin_index/index.html
+[ info ] localhost/user/admin_index/index.html [运行时间：0.158000s][吞吐率：6.33req/s] [内存消耗：2,774.96kb] [文件加载：82]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.010000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin_index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.020000s ]
+[ info ] [ RUN ] app\user\controller\AdminIndexController->index[ D:\phpStudy\WWW\thinkcmf\app\user\controller\AdminIndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/user\admin_index\index.html [ array (
+  0 => 'admin',
+  1 => 'list',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:05+08:00 ] 127.0.0.1 GET /user/public/avatar/id/2.html
+[ info ] localhost/user/public/avatar/id/2.html [运行时间：0.106000s][吞吐率：9.43req/s] [内存消耗：2,597.13kb] [文件加载：71]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:05+08:00 ] 127.0.0.1 GET /user/public/avatar/id/1.html
+[ info ] localhost/user/public/avatar/id/1.html [运行时间：0.073000s][吞吐率：13.70req/s] [内存消耗：2,597.13kb] [文件加载：71]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:05+08:00 ] 127.0.0.1 GET /user/public/avatar/id/3.html
+[ info ] localhost/user/public/avatar/id/3.html [运行时间：0.072000s][吞吐率：13.89req/s] [内存消耗：2,577.38kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:07+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.157000s][吞吐率：6.37req/s] [内存消耗：3,194.38kb] [文件加载：83]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.021000s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:08+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] localhost/admin/main/index.html [运行时间：0.178000s][吞吐率：5.62req/s] [内存消耗：2,748.54kb] [文件加载：81]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.013000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.022000s ]
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\thinkcmf\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.006000s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:08+08:00 ] 127.0.0.1 GET /user/admin_index/index.html
+[ info ] localhost/user/admin_index/index.html [运行时间：0.133000s][吞吐率：7.52req/s] [内存消耗：2,774.96kb] [文件加载：82]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'admin_index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.031000s ]
+[ info ] [ RUN ] app\user\controller\AdminIndexController->index[ D:\phpStudy\WWW\thinkcmf\app\user\controller\AdminIndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/user\admin_index\index.html [ array (
+  0 => 'admin',
+  1 => 'list',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_user` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:08+08:00 ] 127.0.0.1 GET /user/public/avatar/id/2.html
+[ info ] localhost/user/public/avatar/id/2.html [运行时间：0.102000s][吞吐率：9.80req/s] [内存消耗：2,597.13kb] [文件加载：71]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.024000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:08+08:00 ] 127.0.0.1 GET /user/public/avatar/id/1.html
+[ info ] localhost/user/public/avatar/id/1.html [运行时间：0.085000s][吞吐率：11.76req/s] [内存消耗：2,597.13kb] [文件加载：71]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:08+08:00 ] 127.0.0.1 GET /user/public/avatar/id/3.html
+[ info ] localhost/user/public/avatar/id/3.html [运行时间：0.070000s][吞吐率：14.29req/s] [内存消耗：2,577.38kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'public',
+    2 => 'avatar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/user/admin_index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\user\controller\PublicController->avatar[ D:\phpStudy\WWW\thinkcmf\app\user\controller\PublicController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:11+08:00 ] 127.0.0.1 GET /portal/admin_page/index.html
+[ info ] localhost/portal/admin_page/index.html [运行时间：0.175000s][吞吐率：5.71req/s] [内存消耗：3,116.60kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_page',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.006000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.021000s ]
+[ info ] [ RUN ] app\portal\controller\AdminPageController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminPageController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_page\index.html [ array (
+  0 => 'admin',
+  1 => 'keyword',
+  2 => 'pages',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`u`.`user_login`,`u`.`user_nickname`,`u`.`user_email` FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 2 ORDER BY `update_time` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:14+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.156000s][吞吐率：6.41req/s] [内存消耗：3,194.38kb] [文件加载：83]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.020000s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:14+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] localhost/admin/main/index.html [运行时间：0.178000s][吞吐率：5.62req/s] [内存消耗：2,748.54kb] [文件加载：81]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.010000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.007000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.029000s ]
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\thinkcmf\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.006000s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:27:14+08:00 ] 127.0.0.1 GET /portal/admin_page/index.html
+[ info ] localhost/portal/admin_page/index.html [运行时间：0.151000s][吞吐率：6.62req/s] [内存消耗：3,116.91kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_page',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.024000s ]
+[ info ] [ RUN ] app\portal\controller\AdminPageController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminPageController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_page\index.html [ array (
+  0 => 'admin',
+  1 => 'keyword',
+  2 => 'pages',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`u`.`user_login`,`u`.`user_nickname`,`u`.`user_email` FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 2 ORDER BY `update_time` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:24+08:00 ] 127.0.0.1 GET /Portal/admin_about/index.html
+[ info ] localhost/Portal/admin_about/index.html [运行时间：0.155000s][吞吐率：6.45req/s] [内存消耗：3,094.22kb] [文件加载：87]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Portal',
+    1 => 'admin_about',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.021000s ]
+[ info ] [ RUN ] app\portal\controller\AdminAboutController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminAboutController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_about\index.html [ array (
+  0 => 'admin',
+  1 => 'keyword',
+  2 => 'data',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_about` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_about` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_about` ORDER BY `id` DESC LIMIT 0,3 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:46+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] localhost/admin/index/index.html [运行时间：0.171000s][吞吐率：5.85req/s] [内存消耗：3,194.38kb] [文件加载：83]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.024000s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:28:47+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] localhost/admin/main/index.html [运行时间：0.161000s][吞吐率：6.21req/s] [内存消耗：2,748.54kb] [文件加载：81]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.003000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.027000s ]
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\phpStudy\WWW\thinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\thinkcmf\public/plugins/system_info/view/widget.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ BEHAVIOR ] Run plugins\system_info\SystemInfoPlugin @admin_dashboard [ RunTime:0.006000s ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.036000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'SystemInfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select VERSION() as version [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:31:35+08:00 ] 127.0.0.1 GET /portal/admin_article/index.html
+[ info ] localhost/portal/admin_article/index.html [运行时间：0.214000s][吞吐率：4.67req/s] [内存消耗：3,461.93kb] [文件加载：96]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.021000s ]
+[ info ] [ RUN ] app\portal\controller\AdminArticleController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminArticleController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_article\index.html [ array (
+  0 => 'admin',
+  1 => 'start_time',
+  2 => 'end_time',
+  3 => 'keyword',
+  4 => 'articles',
+  5 => 'category_tree',
+  6 => 'category',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`u`.`user_login`,`u`.`user_nickname`,`u`.`user_email` FROM `cmf_portal_post` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` WHERE  `a`.`create_time` >= 0  AND `a`.`delete_time` = 0  AND `a`.`post_type` = 1 ORDER BY `update_time` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_category` WHERE  `delete_time` = 0 ORDER BY `list_order` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category_post` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT `cmf_portal_category`.*,pivot.id AS pivot__id,pivot.post_id AS pivot__post_id,pivot.category_id AS pivot__category_id,pivot.list_order AS pivot__list_order,pivot.status AS pivot__status FROM `cmf_portal_category` INNER JOIN `cmf_portal_category_post` `pivot` ON `pivot`.`category_id`=`cmf_portal_category`.`id` WHERE  `pivot`.`post_id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-13T17:31:35+08:00 ] 127.0.0.1 GET /portal/admin_category/index.html
+[ info ] localhost/portal/admin_category/index.html [运行时间：0.145000s][吞吐率：6.90req/s] [内存消耗：3,100.42kb] [文件加载：86]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'admin_category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; _ga=GA1.1.1415828057.1506305931; Webstorm-3b4604bb=96fd4d8e-7706-4772-9f66-959861185465; Phpstorm-716cfd00=08fed37b-b466-4f05-963a-2d3785ad7f5d; F3rCT3_admin_password=123456; ts_uid=183826200; F3rCT3_admin_username=admin; PHPSESSID=gij02qon9003dilevnuhack2j3; F3rCT3_think_language=zh-CN; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\phpStudy\WWW\thinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run plugins\admin_journal\AdminJournalPlugin @admin_init [ RunTime:0.020000s ]
+[ info ] [ RUN ] app\portal\controller\AdminCategoryController->index[ D:\phpStudy\WWW\thinkcmf\app\portal\controller\AdminCategoryController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/portal\admin_category\index.html [ array (
+  0 => 'admin',
+  1 => 'category_tree',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_plugin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT `config` FROM `cmf_plugin` WHERE  `name` = 'AdminJournal' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_category` WHERE  `delete_time` = 0 ORDER BY `list_order` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.000000s ]
